@@ -46,9 +46,10 @@ export default {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 20vw 30vw 10vw;
+  grid-template-rows: 30vw 30vw 10vw;
 
 }
+
 
 header,
 footer {
@@ -77,7 +78,11 @@ aside {
 /* Demo Specific Styles */
 
 header {
-  background-color: #56B895;
+  background: url('header-background.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
    display: flex;
   align-items: center;
   justify-content: center;
@@ -85,6 +90,8 @@ header {
 
 header h1 {
   color: white;
+  font-size: 5em;
+  font-weight: 400;
 }
 main,
 aside,
